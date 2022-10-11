@@ -3,7 +3,7 @@
     <div class="logo">
         <a href="{{ url_for( 'dashboard.dashboard' ) }}" class="logo-icon"><span class="logo-text">AgroCode</span></a>
         <div class="sidebar-user-switcher user-activity-online">
-            <a href="{{ url_for( 'dashboard.dashboard' ) }}">
+
                 {% if current_user.avatar %}
                     <img src="{{ url_for('static', filename='uploads/' + current_user.avatar) }}">
                 {% else %}
@@ -11,7 +11,7 @@
                 {% endif %}
                 <span class="activity-indicator"></span>
                 <span class="user-info-text">{{ current_user.username }}<br><span class="user-state-info">On a call</span></span>
-            </a>
+
         </div>
     </div>
 
@@ -21,7 +21,7 @@
                 Apps
             </li>
             <li class="active-page">
-                <a href="index.html" class="active"><i class="material-icons-two-tone">dashboard</i>Dashboard</a>
+                <a href="/" class="active"><i class="material-icons-two-tone">dashboard</i>Dashboard</a>
             </li>
             <li>
                 <a href="todo.html"><i class="material-icons-two-tone">done</i>Todo<span class="badge rounded-pill badge-danger float-end">87</span></a>
